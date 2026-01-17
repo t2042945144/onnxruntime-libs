@@ -264,10 +264,6 @@ jobs:
             -Donnxruntime_TVM_CUDA_RUNTIME=OFF \
             -Donnxruntime_TVM_USE_HASH=OFF \
             -Donnxruntime_USE_MIGRAPHX=OFF \
-            -Donnxruntime_DISABLE_CONTRIB_OPS=OFF \
-            -Donnxruntime_DISABLE_ML_OPS=OFF \
-            -Donnxruntime_DISABLE_RTTI=OFF \
-            -Donnxruntime_DISABLE_EXCEPTIONS=OFF \
             -Donnxruntime_MINIMAL_BUILD=OFF \
             -Donnxruntime_EXTENDED_MINIMAL_BUILD=OFF \
             -Donnxruntime_MINIMAL_BUILD_CUSTOM_OPS=OFF \
@@ -277,7 +273,7 @@ jobs:
             -Donnxruntime_USE_WINML=OFF \
             -Donnxruntime_BUILD_MS_EXPERIMENTAL_OPS=OFF \
             -Donnxruntime_USE_TELEMETRY=OFF \
-            -Donnxruntime_ENABLE_LTO=OFF \
+            -Donnxruntime_ENABLE_LTO=ON \
             -Donnxruntime_USE_ACL=OFF \
             -Donnxruntime_USE_ACL_1902=OFF \
             -Donnxruntime_USE_ACL_1905=OFF \
