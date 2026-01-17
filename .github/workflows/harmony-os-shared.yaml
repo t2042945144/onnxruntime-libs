@@ -157,6 +157,11 @@ jobs:
 
           popd
 
+          pushd cmake/external
+          sed -i.bak '/URL_HASH/d' eigen.cmake
+          git diff eigen.cmake || true
+          popd
+
           pushd tools/ci_build
           sed -i.bak s/-fcf-protection// ./build.py
           popd
