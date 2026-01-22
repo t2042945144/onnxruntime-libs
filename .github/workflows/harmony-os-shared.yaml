@@ -120,6 +120,16 @@ jobs:
         run: |
           cd onnxruntime
           pushd cmake
+
+
+          # =======================================================
+          # 【核心修改】在这里添加去版本化的命令
+          sed -i.bak '/version-script/d' ./onnxruntime.cmake  # <--- 新增这行
+          # =======================================================
+
+          
+
+          
           sed -i.bak '/SOVERSION/d' ./onnxruntime.cmake
           sed -i.bak '/onnxruntime PROPERTIES VERSION/d' ./onnxruntime.cmake
 
